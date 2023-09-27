@@ -1,10 +1,14 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 import styles from './styles.module.scss'
 
-import logo from './assets/logo.svg'
+import hamburguermenu from '../../public/assets/hamburguermenu.svg'
+import closesvg from '../../public/assets/close.svg'
 
 const NavBar = () => {
+  const [menu, setMenu] = useState(false)
+  
   return (
     <div className={styles.container}>
       <div className={styles.columnContainer}>
@@ -18,26 +22,48 @@ const NavBar = () => {
               Início
             </div>
 
-            <div onClick={() => window.scrollTo({top: document.body.scrollHeight,behavior: 'smooth'})}>
+            <div onClick={() => window.open('/sobre', '_self')}>
               Sobre
             </div>
 
             <div onClick={() => window.open('/amostra', '_self')}>
               Funcionamento
             </div>
+
+            <div onClick={() => window.open('/galeria', '_self')}>
+              Galeria
+            </div>
           </div>
 
-          <div className={styles.authOptions}>
-            <div onClick={/*() => window.open('/login', '_self')*/() => console.log('login')}>
-              Login
-            </div>
+          <div className={styles.hamburguerMenu} onClick={() => setMenu(true)}>
+            <Image src={hamburguermenu} alt='Menu' width={35} />
+          </div>
 
-            <div className={styles.signIn} onClick={/*() => window.open('/signup', '_self')*/() => console.log('signup')}>
-              <div className={styles.border}>
-                Registro
+          {menu == true ? 
+            <div className={styles.menuContainer}>
+              <div className={styles.closeContainer}>
+                <Image style={{cursor: 'pointer'}} src={closesvg} alt='Fechar' onClick={() => setMenu(false)}/>
+              </div>
+
+              <div className={styles.optionsContainer}>
+                <div className={styles.option} onClick={() => window.open('/', '_self')}>
+                  Início
+                </div>
+
+                <div className={styles.option} onClick={() => window.open('/sobre', '_self')}>
+                  Sobre
+                </div>
+
+                <div className={styles.option} onClick={() => window.open('/amostra', '_self')}>
+                  Funcionamento
+                </div>
+
+                <div className={styles.option} onClick={() => window.open('/galeria', '_self')}>
+                  Galeria
+                </div>
               </div>
             </div>
-          </div>
+          : null}
         </div>
 
         <div className={styles.centerLine}>

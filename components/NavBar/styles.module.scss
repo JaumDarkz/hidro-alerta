@@ -45,6 +45,62 @@
         }
       }
 
+      .hamburguerMenu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          filter: brightness(10);
+        }
+
+        @media (min-width: 700px) {
+          display: none;
+        }
+      }
+
+      .menuContainer {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+          left: 0;
+          background: #87CEEB;
+
+        .closeContainer {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          padding: 10px 35px;
+        }
+
+        .optionsContainer {
+          width: 100vw;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+          align-items: center;
+          color: black;
+          font-size: 30px;
+          font-weight: 600;
+
+          .option {
+            transition: 0.3s;
+
+            &:hover {
+              cursor: pointer;
+              font-size: 33px;
+            }
+          }
+        }
+      }
+
       .authOptions {
         display: flex;
         gap: 25px;
