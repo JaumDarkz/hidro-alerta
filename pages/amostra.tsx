@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import NavBar from '@/components/NavBar'
 
-import circuit from '@/public/assets/circuit.svg'
+import circuit from '@/public/assets/circuit.png'
 
 export default function Amostra() {
   return (

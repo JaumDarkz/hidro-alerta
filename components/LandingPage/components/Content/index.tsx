@@ -11,11 +11,11 @@ const Content = () => {
       <div className={styles.columnContainer}>
         <div className={styles.textContainer}>
           <div className={styles.text1}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Perceberam ainda que os problemas da baixinha sempre estiveram ali e nunca foi de interesse dos gestores municipais em promover um bairro digno de moradia para os seabrenses daquela região.
           </div>
 
           <div className={styles.text2}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Através da coleta de dados, perceberam ainda que existe uma série de problemas em comum durante toda a extensão da baixinha, porém, a água é o principal motivo, seja pela abundância ou ainda pela falta que nossa cidade sofre sem reservatório próprio.
           </div>
         </div>
 

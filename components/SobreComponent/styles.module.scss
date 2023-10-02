@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0px;
+
+  .text {
+    width: 80%;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

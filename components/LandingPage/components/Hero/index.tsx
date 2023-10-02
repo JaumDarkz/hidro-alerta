@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
 
           <div className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Os alunos do Colégio Estadual de Seabra | Tempo Integral, movidos pelo interesse em pesquisa e indignados com a situação do bairro Baixinha de Seabra, pesquisaram sobre os impactos e problemas causados pelo racismo ambiental.
           </div>
 
           <div className={styles.buttonContainer}>
