@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
 
           <div className={styles.buttonContainer}>
-            <div className={styles.button}>
+            <div className={styles.button} onClick={() => window.open('/sobre', '_self')}>
               Estou Interessado
             </div>
           </div>
